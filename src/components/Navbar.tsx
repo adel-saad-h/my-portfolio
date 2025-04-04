@@ -48,24 +48,27 @@ function Navbar() {
             onClick={() => {
               navigate("/projects");
             }}
+            sx={{ textTransform: "none" }}
           >
-            projects
+            Projects
           </Button>
           <Button
             variant="outlined"
             onClick={() => {
               navigate("/about");
             }}
+            sx={{ textTransform: "none" }}
           >
-            about
+            About
           </Button>
           <Button
             variant="outlined"
             onClick={() => {
               navigate("/contact");
             }}
+            sx={{ textTransform: "none" }}
           >
-            contact
+            Contact
           </Button>
         </Box>
       </>
@@ -137,7 +140,7 @@ function Navbar() {
             setOpen(false);
           }}
         >
-          projects
+          Projects
         </MenuItem>
         <MenuItem
           onClick={() => {
@@ -145,7 +148,7 @@ function Navbar() {
             setOpen(false);
           }}
         >
-          about
+          About
         </MenuItem>
         <MenuItem
           onClick={() => {
@@ -153,7 +156,7 @@ function Navbar() {
             setOpen(false);
           }}
         >
-          contact
+          Contact
         </MenuItem>
       </Menu>
     </AppBar>

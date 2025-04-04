@@ -33,7 +33,6 @@ Bachelor of Commerce - BCom, Accounting
 const card = (title: string, body: string) => {
   return (
     <Box
-      
       padding={"min(9em,2%)"}
       minHeight={"10em"}
       display="flex"
@@ -74,11 +73,28 @@ const card = (title: string, body: string) => {
 
 const About = () => {
   return (
-    <Box sx={{ bgcolor: "text.secondary" }}>
+    <Box>
       <Container fixed>
-        <Box>{card("Executive Summary", information.ExecutiveSummary)}</Box>
+        <Box pt={2} justifyItems={"center"} width={"100%"}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            fontFamily="sans-serif"
+            fontWeight={900}
+            sx={{
+              fontSize: 40,
+              boxShadow: 10,
 
-        <Box>{card("About", information.About)}</Box>
+              borderRadius: 5,
+              p: 2,
+            }}
+          >
+            About me
+          </Typography>
+        </Box>
+        <Box>{card("", information.About)}</Box>
+        <Box>{card("Executive Summary", information.ExecutiveSummary)}</Box>
 
         <Box
           margin={2}
